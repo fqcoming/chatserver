@@ -29,6 +29,15 @@ sudo ldconfig /usr/local/lib
 
 ### nginx
 
+首先官网下载安装包
+
+```shell
+
+```
+
+
+
+运行sql语句
 
 
 
