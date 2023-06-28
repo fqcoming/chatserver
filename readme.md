@@ -27,6 +27,21 @@ sudo make install
 sudo ldconfig /usr/local/lib
 ```
 
+运行redis客户端
+```shell
+redis-cli
+```
+
+redis相关命令
+```redis
+keys *   # 查看所有键
+```
+
+
+
+
+
+
 ### nginx
 
 首先官网下载安装包
@@ -39,6 +54,19 @@ sudo ldconfig /usr/local/lib
 
 运行sql语句
 
+```sql
+create database chat;
+use chat;
+source /home/zhengmao22/work/chatserver/sql/chat.sql;
+show tables;  
+```
+
+chat数组库会生成5张表格
+allgroup/friend/groupuser/offlinemessage/user
 
 
+```sql
+DELETE FROM 表名;
+
+```
 
