@@ -1,7 +1,8 @@
 # chatserver
+
 基于muduo实现的可以工作在nginx tcp负载均衡环境中的集群聊天服务器和客户端源码 
 
-### 1.Install required packages and softwares
+### 1 Install required packages and softwares
 
 #### 1.1 install mysql
 
@@ -98,7 +99,7 @@ cd nginx-1.24.0/
 ./configure --with-stream
 sudo make && sudo make install
 cd /usr/local/nginx
-sudo vim ./conf/nginx.conf   # 修改配置文件为./nginx/nginx.conf文件内容
+sudo vim ./conf/nginx.conf   # 修改配置文件为 */chatserver/nginx/nginx.conf 文件内容
 sudo ./sbin/nginx
 netstat -tanop
 ```
@@ -116,7 +117,7 @@ sh autobuild.sh
 ```
 
 
-### 2.run chatserver
+### 2 run chatserver
 
 
 #### 2.1 确保mysql启动，其端口默认为3306
@@ -136,7 +137,7 @@ allgroup/friend/groupuser/offlinemessage/user
 
 
 #### 2.2 确保redis启动，其端口默认为6379
-#### 2.3 确保启动nginx负载均衡器
+#### 2.3 确保启动nginx负载均衡器，其端口为8000
 #### 2.4 启动多台chatserver服务器和多台客户端用于测试
 
 
